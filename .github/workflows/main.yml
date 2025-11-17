@@ -63,8 +63,18 @@ jobs:
     if: needs.get-latest-tag.outputs.addtag == 'true'
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      actions: write
+      checks: write
+      contents: write
+      deployments: write
+      discussions: write
+      issues: write
+      pages: write
       packages: write
+      pull-requests: write
+      repository-projects: write
+      security-events: write
+      statuses: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
