@@ -5,6 +5,20 @@ on:
   schedule:
     - cron: "11 0 * * *"
 
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  deployments: write
+  discussions: write
+  issues: write
+  pages: write
+  packages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -13,19 +27,6 @@ jobs:
   get-latest-tag:
     name: Get latest tag
     runs-on: ubuntu-latest
-    permissions:
-      actions: write
-      checks: write
-      contents: write
-      deployments: write
-      discussions: write
-      issues: write
-      pages: write
-      packages: write
-      pull-requests: write
-      repository-projects: write
-      security-events: write
-      statuses: write
     steps:
       - name: Checkout derper
         uses: actions/checkout@v4
