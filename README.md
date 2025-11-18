@@ -5,7 +5,11 @@ A slim Docker build of Tailscale's `derper` service with one tweaks aimed at sel
 
 Because certificate checks are turned off, use this build only in controlled environments where you understand the security trade-offs.
 
-## Run
+## Get Started
+
+> 1-click deployment with Sealos:
+>
+> [![](https://sealos.io/Deploy-on-Sealos.svg)](https://sealos.io/products/app-store/derper)
 
 The container ships with sensible defaults and auto-generates a 2‑year self-signed cert when `DERP_CERT_MODE=manual` (default) and no cert exists.
 
