@@ -97,7 +97,7 @@ If your DERP server uses a self-signed certificate, you may need to use settings
           "RegionID": 901,
           "DERPPort": xxxx,
           "STUNPort": xxxx,
-					"STUNOnly": false,
+          "STUNOnly": false,
           "HostName": "xxxx",
           "InsecureForTests": true
         }
